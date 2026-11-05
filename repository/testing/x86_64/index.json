@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "repository": "NEWOS testing",
+  "channel": "testing",
+  "architecture": "x86_64",
+  "generated_at": "2026-11-05T12:03:00-06:00",
+  "packages": [
+    {
+      "name": "hello-new",
+      "version": "1.0.0",
+      "architecture": "x86_64",
+      "description": "Hello world smoke-test program for the .new package system",
+      "license": "MIT",
+      "author": "NEWOS",
+      "depends": [],
+      "size": 1631,
+      "sha256": "ea2df312a43f7d7c14f9fe343f08fb5d3eaf5e54430d13bcf53acb1af617d0c1",
+      "location": "packages/hello-new-1.0.0-x86_64.new",
+      "newos_min": "0.2.0",
+      "format": "NEW1",
+      "integrity": "sha256",
+      "signature_status": "unsigned-testing-only"
+    }
+  ]
+}

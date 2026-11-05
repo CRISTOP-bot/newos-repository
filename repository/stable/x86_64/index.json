@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "repository": "NEWOS stable",
+  "channel": "stable",
+  "architecture": "x86_64",
+  "generated_at": "2026-11-05T12:03:00-06:00",
+  "packages": []
+}

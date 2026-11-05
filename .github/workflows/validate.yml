@@ -1,0 +1,20 @@
+name: Validate NEWOS repository
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Check generated indexes are up to date
+        run: python3 scripts/generate_index.py --check
+      - name: Validate package metadata, format, checksums and paths
+        run: python3 scripts/validate_repository.py --root .
